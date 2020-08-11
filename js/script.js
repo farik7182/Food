@@ -1,11 +1,14 @@
-        import tabs from './modules/tabs'; 
-        import forms from './modules/forms'; 
-        import timer from './modules/timer'; 
-        import modal from './modules/modal'; 
-        import cards from './modules/cards'; 
-        import slider from './modules/slider'; 
-        import calculator from './modules/calculator';
-        import {openModal} from './modules/modal';
+require('es6-promise').polyfill();
+import 'nodelist-foreach-polyfill';
+
+import tabs from './modules/tabs'; 
+import forms from './modules/forms'; 
+import timer from './modules/timer'; 
+import modal from './modules/modal'; 
+import cards from './modules/cards'; 
+import slider from './modules/slider'; 
+import calculator from './modules/calculator';
+import {openModal} from './modules/modal';
 
 window.addEventListener('DOMContentLoaded', function() {
     const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 300000);
@@ -28,3 +31,4 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     calculator();
 });
+

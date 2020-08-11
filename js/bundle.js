@@ -783,6 +783,8 @@ window.addEventListener('DOMContentLoaded', function() {
     Object(_modules_calculator__WEBPACK_IMPORTED_MODULE_6__["default"])();
 });
 
+
+
 /***/ }),
 
 /***/ "./js/services/services.js":
